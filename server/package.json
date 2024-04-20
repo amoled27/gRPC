@@ -1,0 +1,16 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "ts-node server",
+    "gen-proto": "yarn proto-loader-gen-types --grpcLib=@grpc/grpc-js --outDir=. ../proto/*.proto"
+  },
+  "devDependencies": {
+    "@grpc/grpc-js": "^1.10.6",
+    "@grpc/proto-loader": "^0.7.12",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  }
+}
